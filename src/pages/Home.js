@@ -55,10 +55,10 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
           <div>
             <span className="greetings">Hello, my name is</span>
           </div>
-          <div style={{ marginTop: "-0.7em", marginBottom: "-2.3em" }}>
+          <div className="ownersName">
             <h1>Sanusi Razaq</h1>
           </div>
-          <div style={{ marginTop: "-1em" }}>
+          <div className="jobFunctionHolder" >
             <span className="jobFunction">I build web applications.</span>
           </div>
           <div className="jobDescriptionHolder">
@@ -106,7 +106,7 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
         <LineEmail></LineEmail>
       </EmailHolder>
 
-      <AboutMeAndImageHolder>
+     <AboutMeAndImageHolder>
         <InnerAboutAndImageHolder>
           <div className="aboutHeader">
             <div className="numberAndName">
@@ -141,7 +141,7 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
             </div>
           </div>
         </InnerAboutAndImageHolder>
-      </AboutMeAndImageHolder>
+      </AboutMeAndImageHolder> 
 
 
       <TechnologyListHolder>
@@ -165,9 +165,9 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
 
           </div>
         
-      </TechnologyListHolder>
+      </TechnologyListHolder> 
 
-      <WorkExpHolder>
+       <WorkExpHolder>
         <InnerWorkExpHolder>
         <div className="workExpHeader">
             <div className="numberAndName">
@@ -199,9 +199,9 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
           </ExperienceContentHolder>
         </InnerWorkExpHolder>
 
-      </WorkExpHolder>
+      </WorkExpHolder> 
 
-      <ProjectBuiltHolder>
+       <ProjectBuiltHolder>
         <InnerProjectBuiltHolder>
         <div className="projectBuiltHeader">
             <div className="numberAndName">
@@ -212,7 +212,7 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
           </div>
 
 
-          <div>
+          <div style={{ width:'100%'}}>
           <ProjectBuilt/>
 
           </div>
@@ -220,9 +220,11 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
       
 
 
-      </ProjectBuiltHolder>
+      </ProjectBuiltHolder> 
 
 {/* footer content starts here */}
+
+
 
 <FooterContentHolder>
         <div className="comesNext">
@@ -243,7 +245,7 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
           <button>Say Hello</button>
         </div>
 
-      </FooterContentHolder>
+      </FooterContentHolder> 
       {/* footer content end here */}
       {/* content of the home start */}
     </Container>

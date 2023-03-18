@@ -3,12 +3,14 @@ import styled from 'styled-components'
 
 export const ResponsiveSlideHolder = styled.div`
 
+
+
         .offcanvas-body ul{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-evenly;
-                background-color: green;
+                /* background-color: green; */
                 height: 100%;
         }
 
@@ -53,6 +55,12 @@ cursor: pointer;
 
         .offcanvas-body ul .menuItem .theNumber{
             color: #00FF75;
+
+        }
+
+        
+        .offcanvas-body ul .menuItem .theItem{
+           color: #ffffff;
 
         }
   
