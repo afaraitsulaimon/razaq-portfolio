@@ -5,7 +5,7 @@ const Slider = () => {
   return (
        
     
-        <ResponsiveSlideHolder className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <ResponsiveSlideHolder className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style={{ backgroundColor:'rgba(71, 18, 84,0.7)' }}>
   <div className="offcanvas-header">
     <h5 id="offcanvasRightLabel"> </h5>
     <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>

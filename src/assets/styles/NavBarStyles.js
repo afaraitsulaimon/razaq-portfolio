@@ -104,7 +104,5 @@ export const MenuIconHolder = styled.div`
 
     @media (max-width: 912px) and (min-width: 360px) {
         display: inline;
-
-    
     }
 `;
