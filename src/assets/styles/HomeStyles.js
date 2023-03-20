@@ -114,6 +114,8 @@ export const SocialMediaHolder = styled.div`
   justify-content: space-evenly;
   position: fixed;
   top: 10em;
+ 
+
   @media (max-width: 912px) and (min-width: 360px) {
     display: flex;
     flex-direction: row;
@@ -121,11 +123,43 @@ export const SocialMediaHolder = styled.div`
     width: 70%;
     height: 30px;
     position: absolute;
-    top: 345em;
+    top: 340em;
      left: 4.5em; 
    
+  }
+ 
 
-    
+  @media only screen and (width: 768px) {
+    top: 382em;
+    left: 7em; 
+  }
+
+  @media (width: 412px) {
+    top: 325em;
+    left: 4em; 
+  }
+
+  @media only screen and (width: 414px) {
+    top: 330em;
+    left: 4em; 
+  }
+
+ 
+
+
+  @media (width: 384px) {
+    top: 330em;
+  }
+  
+  
+  @media (width: 600px) {
+    top: 362em;
+    left: 5.5em;
+  }
+
+  @media (width: 712px) {
+    top: 385em;
+    left: 6.5em;
   }
 `;
 
@@ -179,6 +213,15 @@ export const AboutMeAndImageHolder = styled.div`
     /* background-color: pink; */
     margin-top: -5em;
   }
+  @media only screen and (min-width: 481px) and (max-width: 768px){
+    margin-top: -15em;
+    }
+
+    @media only screen and (width: 540px) {
+   margin-top: -9em;
+    }
+
+
 `;
 
 export const InnerAboutAndImageHolder = styled.div`
@@ -199,6 +242,8 @@ export const InnerAboutAndImageHolder = styled.div`
     line-height: 20px;
     color: #00ff75;
   }
+
+  
 
   .aboutHeader .numberAndName .about {
     font-family: 'Fira Code', monospace;
@@ -237,6 +282,8 @@ export const InnerAboutAndImageHolder = styled.div`
     width: 200px;
     height: 200px;
   }
+
+
 
   @media (max-width: 912px) and (min-width: 360px) {
     width: 100%;
@@ -289,8 +336,42 @@ export const InnerAboutAndImageHolder = styled.div`
     width: 240px;
    
   }
-
   }
+
+  @media only screen and (max-width: 480px) { 
+    .aboutHeader .numberAndName .aboutNumber {
+    
+    font-size: 15px;
+    
+  }
+
+  .aboutHeader .numberAndName .about {
+    
+    font-size: 15px;
+    
+  }
+
+  .aboutHeader .aboutLine {
+    
+    width: 150px;
+    
+  }
+
+  .aboutContentImageHolder .aboutImage img {
+      width: 200px;
+      height: 200px;
+    
+    }
+  }
+
+  @media only screen and (width: 540px) {
+   
+   .aboutContentImageHolder .aboutImage img {
+    width: 200px;
+    height: 200px;
+    margin-top: -2em;
+  }
+    }
 `;
 
 export const TechnologyListHolder = styled.div`
@@ -373,7 +454,52 @@ export const TechnologyListHolder = styled.div`
 
   }
   }
+
+ 
+ 
+
+  @media only screen and (min-width: 481px) and (max-width: 768px){
+    margin-top: -20em;
+    }
+
+  /* for smaller screen */
+
+
+  @media only screen and (max-width: 480px) { 
+    .listHolder {
+    margin-top: -2em;
+  }
+
+  .listHolder span {
+    font-size: 8px;
+    
+  }
+
+  .listHolder .programmingList .leftList span {
+    
+    font-size: 11px;
+    
+  }
+  }
+
+
+  @media only screen and (width: 412px) {
+   margin-top: -17em;
+    }
+
+  @media only screen and (width: 414px) {
+   margin-top: -17em;
+    }
+
+    @media only screen and (width: 540px) {
+   margin-top: -10em;
+  
+}
+  
+  
 `;
+
+
 
 export const WorkExpHolder = styled.div`
   width: 100%;
@@ -450,6 +576,8 @@ export const InnerWorkExpHolder = styled.div`
     margin-left: 0.3em; */
   }
 
+ 
+
   .workExpHeader .numberAndName .workExpNumber {
     color: white;
     font-size: 17px;
@@ -460,6 +588,25 @@ export const InnerWorkExpHolder = styled.div`
     font-size: 17px;
   }
 }
+
+@media only screen and (max-width: 480px) {
+
+    .workExpHeader .workExpLine {
+    width: 150px;
+   
+  }
+
+    .workExpHeader .numberAndName .workExpNumber {
+ 
+    font-size: 15px;
+  }
+
+  .workExpHeader .numberAndName .experience {
+   
+    font-size: 15px;
+  }
+   }
+
 `;
 
 export const ExperienceContentHolder = styled.div`
@@ -667,7 +814,6 @@ export const InnerProjectBuiltHolder = styled.div`
    
     font-size: 15px;
     font-weight: 500;
-
     
   }
   .projectBuiltHeader .projectBuiltLine {
@@ -677,6 +823,19 @@ export const InnerProjectBuiltHolder = styled.div`
     
   }
   }
+
+  /* for smaller screen */
+  @media only screen and (max-width: 480px) {
+    .projectBuiltHeader .numberAndName {
+   
+   font-size: 13px;
+
+   
+ }
+    .projectBuiltHeader .projectBuiltLine {
+  width: 150px;
+  }
+}
 `;
 
 export const FooterContentHolder = styled.div`
