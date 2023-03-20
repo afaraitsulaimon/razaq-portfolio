@@ -19,11 +19,11 @@ export const IntroContentHolder = styled.div`
   }
 
   .theContent .greetings {
-    font-family: "Fira Code";
+    font-family: 'Fira Code', monospace;
     font-style: normal;
     font-weight: 300;
-    font-size: 25px;
-    line-height: 18px;
+    font-size: 23px;
+    line-height: 16px;
 
     color: #00ff75;
   }
@@ -31,6 +31,7 @@ export const IntroContentHolder = styled.div`
   .theContent .ownersName {
     margin-top: -0.7em;
     margin-bottom: -2.3em;
+    font-family: 'Inter', sans-serif;
   }
 
   .theContent .ownersName h1 {
@@ -44,6 +45,7 @@ export const IntroContentHolder = styled.div`
 
   .theContent .jobFunctionHolder .jobFunction {
     margin-top: -1em;
+    font-family: 'Inter', sans-serif;
   }
 
   .theContent .jobFunction {
@@ -115,11 +117,11 @@ export const SocialMediaHolder = styled.div`
   @media (max-width: 912px) and (min-width: 360px) {
     display: flex;
     flex-direction: row;
-    background-color: red;
+    /* background-color: red; */
     width: 70%;
     height: 30px;
     position: absolute;
-    top: 352em;
+    top: 345em;
      left: 4.5em; 
    
 
@@ -152,6 +154,7 @@ export const EmailHolder = styled.div`
   .emailAddress p {
     transform: rotate(90deg);
     color: #907897;
+    font-family: 'Fira Code', monospace;
   }
 
   @media (max-width: 912px) and (min-width: 360px) {
@@ -189,22 +192,22 @@ export const InnerAboutAndImageHolder = styled.div`
   }
 
   .aboutHeader .numberAndName .aboutNumber {
-    font-family: "Fira Code";
+    font-family: 'Fira Code', monospace;
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
-    line-height: 22px;
+    font-size: 23px;
+    line-height: 20px;
     color: #00ff75;
   }
 
   .aboutHeader .numberAndName .about {
-    font-family: "Fira Code";
+    font-family: 'Fira Code', monospace;
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
     line-height: 22px;
     color: #00ff75;
-    padding-left: 10px;
+    padding-left: 7px;
   }
 
   .aboutHeader .aboutLine {
@@ -223,6 +226,7 @@ export const InnerAboutAndImageHolder = styled.div`
   .aboutContentImageHolder .aboutContent {
     width: 450px;
     color: white;
+    font-family: 'Inter', sans-serif;
   }
 
   .aboutContentImageHolder .aboutContent .secondContent span {
@@ -242,6 +246,20 @@ export const InnerAboutAndImageHolder = styled.div`
       justify-content: center;
     }
 
+    .aboutHeader .numberAndName .aboutNumber {
+    
+    font-size: 20px;
+    
+  
+  }
+
+  .aboutHeader .numberAndName .about {
+ 
+    font-size: 20px;
+   
+    padding-left: 3px;
+  }
+
     .aboutContentImageHolder {
       display: flex;
       flex-direction: column;
@@ -250,7 +268,8 @@ export const InnerAboutAndImageHolder = styled.div`
 
     .aboutContentImageHolder .aboutContent {
       width: 100%;
-      padding: 1.2em;
+      padding: 2em;
+      font-size: 12px;
     }
 
     .aboutContentImageHolder .aboutImage {
@@ -258,7 +277,7 @@ export const InnerAboutAndImageHolder = styled.div`
       justify-self: center;
       align-self: center;
       position: absolute;
-      top: 35.8em;
+      top: 31em;
     }
 
     .aboutContentImageHolder .aboutImage img {
@@ -266,6 +285,11 @@ export const InnerAboutAndImageHolder = styled.div`
       height: 300px;
     
     }
+    .aboutHeader .aboutLine {
+    width: 240px;
+   
+  }
+
   }
 `;
 
@@ -287,6 +311,7 @@ export const TechnologyListHolder = styled.div`
   .listHolder span {
     font-size: 16px;
     color: #00ff75;
+    font-family: 'Fira Code', monospace;
   }
 
   .listHolder .programmingList {
@@ -298,7 +323,7 @@ export const TechnologyListHolder = styled.div`
   }
 
   .listHolder .programmingList .leftList span {
-    font-family: "Fira Code";
+    font-family: 'Fira Code', monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -314,7 +339,7 @@ export const TechnologyListHolder = styled.div`
   }
 
   .listHolder .programmingList .rightList span {
-    font-family: "Fira Code";
+    font-family: 'Fira Code', monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -327,9 +352,25 @@ export const TechnologyListHolder = styled.div`
 
   @media (max-width: 912px) and (min-width: 360px) {
     height: 20vh;
-
+    margin-top: -5em;
     .listHolder {
     margin-top: -4em;
+  }
+
+  .listHolder span {
+    font-size: 10px;
+    
+  }
+
+  .listHolder .programmingList .leftList span {
+    
+    font-size: 13px;
+    
+  }
+
+  .listHolder .programmingList .rightList span{
+    font-size: 13px;
+
   }
   }
 `;
@@ -358,20 +399,23 @@ export const InnerWorkExpHolder = styled.div`
   }
 
   .workExpHeader .numberAndName {
-    font-family: "Fira Code";
+    font-family: 'Fira Code', monospace;
     font-style: normal;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 22px;
     font-weight: 700;
+
   }
 
 
   .workExpHeader .numberAndName .workExpNumber {
     color: white;
+   
   }
 
   .workExpHeader .numberAndName .experience {
     color: #00ff75;
+ 
   }
   .workExpHeader .workExpLine {
     width: 261px;
@@ -389,22 +433,32 @@ export const InnerWorkExpHolder = styled.div`
   .workExpHeader {
     display: flex;
     justify-content: space-around;
+   
   }
 
   .workExpHeader .numberAndName {
     font-weight: 500;
-   font-size: 20px;
+   font-size: 16px;
  
  }
 
  .workExpHeader .workExpLine {
-    width: 261px;
+    width: 200px;
     height: 1px;
+    margin-left: 0;
     /* background-color: #233554;
     margin-left: 0.3em; */
   }
 
+  .workExpHeader .numberAndName .workExpNumber {
+    color: white;
+    font-size: 17px;
+  }
 
+  .workExpHeader .numberAndName .experience {
+    color: #00ff75;
+    font-size: 17px;
+  }
 }
 `;
 
@@ -430,7 +484,7 @@ export const ExperienceContentHolder = styled.div`
     border-left: 2px solid #233554;
     background-color: transparent;
     color: #ffffff;
-    font-family: "Fira Code";
+    font-family: 'Fira Code', monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -451,6 +505,7 @@ export const ExperienceContentHolder = styled.div`
 
   .expListContents {
     margin-left: 2em;
+    font-family: 'Inter', sans-serif;
   }
 
   .expListContents .post .position {
@@ -477,9 +532,9 @@ export const ExperienceContentHolder = styled.div`
   .expListContents .year span {
     font-family: "Fira Code";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 13px;
-    line-height: 17px;
+    line-height: 16px;
     /* or 130% */
     color: #a8b2d1;
   }
@@ -569,11 +624,11 @@ export const InnerProjectBuiltHolder = styled.div`
   }
 
   .projectBuiltHeader .numberAndName {
-    font-family: "Fira Code";
+    font-family: 'Fira Code', monospace;
     font-style: normal;
-    font-size: 32px;
-    line-height: 22px;
-    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: 600;
   }
 
 
@@ -610,16 +665,16 @@ export const InnerProjectBuiltHolder = styled.div`
 
     .projectBuiltHeader .numberAndName {
    
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
 
     
   }
   .projectBuiltHeader .projectBuiltLine {
-  width: 261px;
+  width: 240px;
       /* height: 1px;
     background-color: #233554; */
-    margin-left: 0;
+    
   }
   }
 `;
@@ -636,18 +691,18 @@ export const FooterContentHolder = styled.div`
   }
 
   .comesNext span {
-    /* font-family: 'Fira Code';
-font-style: normal; */
+    font-family: 'Fira Code', monospace;
+font-style: normal; 
     font-weight: 600;
-    font-size: 18px;
-    line-height: 15px;
+    font-size: 17px;
+    line-height: 14px;
     /* identical to box height, or 64% */
 
     color: #00ff75;
   }
 
   .inTouch span {
-    font-family: "Inter";
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -665,8 +720,8 @@ font-style: normal; */
   }
 
   .message p {
-    /* font-family: 'Inter';
-font-style: normal; */
+    font-family: 'Inter', sans-serif;
+font-style: normal; 
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -679,7 +734,7 @@ font-style: normal; */
     margin-bottom: 10em;
   }
   .sayHello button {
-    font-family: "Fira Code";
+    font-family: 'Fira Code', monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -691,5 +746,12 @@ font-style: normal; */
     border-radius: 5px;
     border: 1px solid #00ff75;
     background: transparent;
+  }
+  @media (max-width: 912px) and (min-width: 360px) {
+
+    .message {
+    width: 100%;
+    
+  }
   }
 `;

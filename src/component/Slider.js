@@ -12,25 +12,25 @@ const Slider = () => {
   </div>
   <div className="offcanvas-body">
   <ul>
-                    <li className='menuItem'>
+                    <a href="#abt" className='text-decoration-none'><li className='menuItem'>
                         <span className='theNumber'>01.</span>
                         <span className='theItem'>About</span>
-                    </li>
+                    </li></a>
 
-                    <li className='menuItem'>
+                    <a href="#exp" className='text-decoration-none'><li className='menuItem'>
                         <span className='theNumber'>02.</span>
                         <span className='theItem'>Experience</span>
-                    </li>
+                    </li></a>
 
-                    <li className='menuItem'>
+                    <a href="#work" className='text-decoration-none'><li className='menuItem'>
                         <span className='theNumber'>03.</span>
                         <span className='theItem'>Work</span>
-                    </li>
+                    </li></a>
 
-                    <li className='menuItem'>
+                    <a href="#contact" className='text-decoration-none'><li className='menuItem'>
                         <span className='theNumber'>04.</span>
                         <span className='theItem'>Contact</span>
-                    </li>
+                    </li></a>
 
                     <li>
                         <button>Resume</button>

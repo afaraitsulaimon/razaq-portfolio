@@ -50,7 +50,7 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
 
       {/* content of the home start */}
 
-      <IntroContentHolder>
+        <IntroContentHolder>
         <div className="theContent">
           <div>
             <span className="greetings">Hello, my name is</span>
@@ -73,7 +73,7 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
             </p>
           </div>
         </div>
-      </IntroContentHolder>
+      </IntroContentHolder> 
 
       <SocialMediaHolder>
         <div>
@@ -97,16 +97,16 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
         </div>
 
         <LineSocial></LineSocial>
-      </SocialMediaHolder>
+      </SocialMediaHolder> 
 
       <EmailHolder>
         <div className="emailAddress">
           <p>Adedunni155@gmail.com</p>
         </div>
         <LineEmail></LineEmail>
-      </EmailHolder>
+      </EmailHolder> 
 
-     <AboutMeAndImageHolder>
+      <AboutMeAndImageHolder id="abt">
         <InnerAboutAndImageHolder>
           <div className="aboutHeader">
             <div className="numberAndName">
@@ -141,9 +141,8 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
             </div>
           </div>
         </InnerAboutAndImageHolder>
-      </AboutMeAndImageHolder> 
-
-
+      </AboutMeAndImageHolder>   
+ 
       <TechnologyListHolder>
 
           <div className="listHolder">
@@ -165,9 +164,9 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
 
           </div>
         
-      </TechnologyListHolder> 
+      </TechnologyListHolder>
 
-       <WorkExpHolder>
+       <WorkExpHolder id="exp">
         <InnerWorkExpHolder>
         <div className="workExpHeader">
             <div className="numberAndName">
@@ -199,9 +198,9 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
           </ExperienceContentHolder>
         </InnerWorkExpHolder>
 
-      </WorkExpHolder> 
+      </WorkExpHolder>  
 
-       <ProjectBuiltHolder>
+    <ProjectBuiltHolder id="work">
         <InnerProjectBuiltHolder>
         <div className="projectBuiltHeader">
             <div className="numberAndName">
@@ -213,26 +212,26 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
 
 
           <div style={{ width:'100%'}}>
-          <ProjectBuilt/>
+      <ProjectBuilt/> 
 
           </div>
         </InnerProjectBuiltHolder>
       
 
 
-      </ProjectBuiltHolder> 
+      </ProjectBuiltHolder>  
 
 {/* footer content starts here */}
 
 
 
-<FooterContentHolder>
-        <div className="comesNext">
+  <FooterContentHolder>
+       <div className="comesNext">
           <span>What Comes Next?</span>
-        </div>
-        <div className="inTouch">
+        </div> 
+      <div className="inTouch">
           <span>Get In Touch</span>
-        </div>
+        </div> 
         <div className="message">
           <p>
             My mailbox is always open, even though 
@@ -240,12 +239,12 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
              I will do my best to get back to you whether you
              have a question or are just looking to say hello!
              </p>
-        </div>
-        <div className="sayHello">
-          <button>Say Hello</button>
-        </div>
+        </div> 
+      <div className="sayHello" id="contact">
+      <button onClick={() => window.location = 'mailto:Adedunni155@gmail.com'}> Send Mail</button>
+        </div> 
 
-      </FooterContentHolder> 
+      </FooterContentHolder>  
       {/* footer content end here */}
       {/* content of the home start */}
     </Container>
