@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     width: 100%;
-
+    font-family: 'Fira Code', monospace;
 `;
 
 export const NavBarHolder = styled.div`
@@ -90,6 +90,14 @@ align-items: center;
 
 color: #00FF75;
 }
+
+ul li button:hover{
+    background-color: #00FF75;
+    color: white;
+    border: none;
+}
+
+
 @media (max-width: 912px) and (min-width: 360px) {
         display: none;
 

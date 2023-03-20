@@ -5,6 +5,7 @@ import { Container, NavBarHolder,
 
     import UserLogo from '../assets/images/logo.png'
     import {  AiOutlineMenu } from "react-icons/ai";
+    import TheCV from '../assets/mycv.pdf'
 
 const Navbar = () => {
   return (
@@ -15,28 +16,36 @@ const Navbar = () => {
             </LogoHolder>
             <MenuHolder>
                 <ul>
-                    <li className='menuItem'>
+                <a href="#abt" className='text-decoration-none'><li className='menuItem'>
                         <span className='theNumber'>01.</span>
                         <span className='theItem'>About</span>
-                    </li>
+                    </li></a>
 
-                    <li className='menuItem'>
+                   <a href="#exp" className='text-decoration-none'><li className='menuItem' >
                         <span className='theNumber'>02.</span>
                         <span className='theItem'>Experience</span>
                     </li>
-
-                    <li className='menuItem'>
+                    </a>
+                    <a href="#work" className='text-decoration-none'><li className='menuItem'>
                         <span className='theNumber'>03.</span>
                         <span className='theItem'>Work</span>
-                    </li>
+                    </li></a>
 
-                    <li className='menuItem'>
+                    <a href="#contact" className='text-decoration-none'> <li className='menuItem'>
                         <span className='theNumber'>04.</span>
                         <span className='theItem'>Contact</span>
-                    </li>
+                    </li></a>
 
                     <li>
-                        <button>Resume</button>
+                        <a 
+                            href={TheCV} 
+                            target='_blank' 
+                            rel='noreferrer' 
+                            className='text-decoration-none'>
+                                <button>
+                                    Resume
+                                    </button>
+                        </a>
                     </li>
                 </ul>
             </MenuHolder>

@@ -60,7 +60,7 @@ line-height: 17px;
 color: #00FF75;
 position: absolute;
 top: 1.5em;
-left: 16em;
+left: 13.5em;
 
 }
 
@@ -253,7 +253,7 @@ width: 50%;
 
 .project-image img{
     height: 100%;
-width: 400px;
+width: 100%;
 }
 
 .projectDetails{
@@ -263,6 +263,7 @@ width: 400px;
 
 }
 
+
 .projectDetails .top {
  position: relative;
 
@@ -270,7 +271,7 @@ width: 400px;
 
 
 .projectDetails .top span{
-    font-family: 'Fira Code';
+    font-family: 'Fira Code', monospace;
 font-style: normal;
 font-weight: 400;
 font-size: 13px;
@@ -284,7 +285,7 @@ top: 1.5em;
 
 
 .projectDetails .top p{
-    /* font-family: 'Inter'; */
+    font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
@@ -300,7 +301,7 @@ top: 2em;
     height: 122px;
 width: 470px;
 border-radius: 4px;
-padding: 25px;
+
 background-color: #471254; 
 display: flex;
 align-items: center;
@@ -311,13 +312,14 @@ align-items: center;
 
 .projectDetails .projectDescription .content{
     
-    /* font-family: 'Inter';
-font-style: normal; */
+    font-family: 'Inter', sans-serif;
+font-style: normal; 
 font-weight: 400;
 font-size: 14px;
-line-height: 23px;
+line-height: 18px;
 /* or 167% */
 color: #FFFFFF;
+padding: 1em;
 }
 
 
@@ -335,14 +337,12 @@ color: #FFFFFF;
 .projectDetails .toolsUsed ul li{
     list-style: none;
     padding: 0.5em;
-    font-family: 'Fira Code';
+    font-family: 'Fira Code', monospace;
 font-style: normal;
 font-weight: 400;
 font-size: 13px;
 line-height: 17px;
 /* identical to box height, or 130% */
-
-
 color: #FFFFFF;
 }
 
@@ -359,98 +359,76 @@ color: #FFFFFF;
 
 
 /* responsive styling */
-
 @media (max-width: 912px) and (min-width: 360px) {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+display: flex;
+flex-direction: column;
+position: relative;
 
-
-    .project-image{
+.projectDetails{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgba(71, 18, 84,0.7); 
+    position: absolute;
+}
+.project-image{
 
 width: 100%;
 border-radius: 5px;
-
 }
 
 .project-image img{
 
 width: 100%;
+
 border-radius: 5px;
 
+
 }
 
-.projectDetails{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-radius: 5px;
-    background-color: rgba(71, 18, 84,0.7);  
-   
-}
-
-.projectDetails .top span{
-
-position: absolute;
-top: 1.5em;
-left: 1.5em;
-
+.projectDetails .top{
+    padding-left: 1.5em;
 }
 
 .projectDetails .top p{
-
-color: black;
-position: absolute;
-top: 2em;
-left: 1.1em;
+    color: black;
 }
 
 .projectDetails .projectDescription{
-    /* height: 122px;
-width: 508px;
-border-radius: 4px;
-padding: 25px;
-text-align: right; */
+    height: 122px;
 width: 100%;
-position: absolute;
-right: 0;
-top:5em;
-text-align: left;
-padding: 20px;
+border-radius: 0;
+
 background-color: transparent; 
+display: flex;
+align-items: center;
+ position: absolute;
+ right: 0;
 
-} 
-
-.projectDetails .projectDescription .content{
-    
-    /* font-family: 'Inter';
-font-style: normal; */
-font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-/* or 167% */
-color: #FFFFFF;
 }
 
-
-.projectDetails .toolsUsed ul li{
-    /* list-style: none;
-    padding: 0.5em;
-    font-family: 'Fira Code';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 17px;
-color: #FFFFFF; */
-color: #FFFFFF;
-
-} 
+.projectDetails .projectDescription .content{
+   
+line-height: 20px;
+/* or 167% */
+padding-top: 3em;
+}
 
 .projectDetails .toolsUsed {
     position: absolute;
     left: -1.2em;
     top: 14em;
 }
+.projectDetails .toolsUsed ul li{
+   
+font-weight: 200;
+font-size: 12px;
+line-height: 13px;
+/* identical to box height, or 130% */
+
+}
+
+
 
 .projectDetails .socialUsed{
    
@@ -462,6 +440,7 @@ color: #FFFFFF;
 
 
 }
+
 
 `;
 
@@ -499,7 +478,7 @@ width: 400px;
 
 
 .projectDetails .top span{
-    font-family: 'Fira Code';
+    font-family: 'Fira Code', monospace;
 font-style: normal;
 font-weight: 400;
 font-size: 13px;
@@ -507,17 +486,14 @@ line-height: 17px;
 /* identical to box height, or 130% */
 color: #00FF75;
 position: absolute;
-bottom: 1.5em;
-left: 18.7em;
+bottom: 2em;
+left: 16.5em;
 
 }
 
 
-
-
-
 .projectDetails .top p{
-    /* font-family: 'Inter'; */
+    font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
@@ -545,7 +521,7 @@ top:1.5em;
 }
 
 .projectDetails .projectDescription .firstcontent{
-    
+    font-family: 'Inter', sans-serif;
 font-weight: 400;
 font-size: 14px;
 line-height: 20px;
@@ -556,7 +532,7 @@ color: #FFFFFF;
 
 .projectDetails .projectDescription .secondcontent{
    
-    /* font-family: 'Inter'; */
+    font-family: 'Inter', sans-serif;
 font-weight: 400;
 font-size: 14px;
 line-height: 20px;
@@ -566,7 +542,8 @@ color: #FFFFFF;
 
 .projectDetails .toolsUsed {
     position: absolute;
-    top: 16em;
+    top: 18em;
+    
 }
 
 
@@ -577,7 +554,7 @@ color: #FFFFFF;
 .projectDetails .toolsUsed ul li{
     list-style: none;
     padding: 0.5em;
-    font-family: 'Fira Code';
+    font-family: 'Fira Code', monospace;
 font-style: normal;
 font-weight: 400;
 font-size: 13px;
@@ -590,13 +567,13 @@ color: #FFFFFF;
 .projectDetails .learnMoreButton{
 
     position: absolute;
-    top: 18.7em;
+    top: 22em;
     left: 13em;
 
 }
 
 .projectDetails .learnMoreButton button{
-    font-family: 'Fira Code';
+    font-family: 'Fira Code', monospace;
 font-style: normal;
 font-weight: 400;
 font-size: 13px;
@@ -666,7 +643,7 @@ position: absolute;
 right:0;
 top:2.2em;
 text-align: left;
-padding: 20px;
+padding: 15px;
 background-color: transparent; 
 
 } 
@@ -758,7 +735,7 @@ margin-top: 10em;
 }
 
 .header .otherProjects{
-    /* font-family: 'Inter'; */
+    font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 22px;
@@ -770,7 +747,7 @@ color: #FFFFFF;
 
 .header .explore{
 
-    font-family: 'Fira Code';
+font-family: 'Fira Code', monospace;
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
@@ -840,11 +817,12 @@ color: #CCD6F6;
 .otherProjectDisplayHolder .card .title {
     margin-left: 1em;
     margin-top: 1em;
+    font-family: 'Inter', sans-serif;
 }
 
 .otherProjectDisplayHolder .card .details p {
     padding-left: 1em;
-    /* font-family: 'Inter'; */
+    font-family: 'Inter', sans-serif;
 font-style: normal;
 font-size: 13px;
 line-height: 22px;
@@ -864,7 +842,7 @@ color: #FFFFFF
 
 }
 .otherProjectDisplayHolder .card .theToolsUsed span{
-    /* font-family: 'Fira Code'; */
+    font-family: 'Fira Code', monospace;
 font-style: normal;
 font-weight: 400;
 font-size: 12px;
@@ -879,7 +857,7 @@ color: #8892B0;
     margin-bottom: 8em;
 }
 .showMoreAndLessBut button{
-    font-family: 'Fira Code';
+    font-family: 'Fira Code', monospace;
 font-style: normal;
 font-weight: 400; 
 font-size: 13px;

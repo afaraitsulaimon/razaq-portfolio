@@ -30,7 +30,7 @@ const ProjectBuilt = () => {
   return (
     <Container>
       <TopThreeProjectsHolder>
-        <FirstProjectHolder>
+      <FirstProjectHolder>
     
          <div className="project-image">
             <img src={Project1Image} alt="project1" />
@@ -84,7 +84,7 @@ const ProjectBuilt = () => {
         </FirstProjectHolder>
 
         {/* second project starts here */}
-        <SecondProjectHolder>
+      <SecondProjectHolder>
 
         
           <div className="projectDetails">
@@ -124,18 +124,18 @@ const ProjectBuilt = () => {
                   style={{ marginLeft: "10px" }}
                 />
               </span>
-            </div>
+            </div> 
           </div>
 
-          <div className="project-image">
-            <img src={Project2Image} alt="project2" />
-          </div>
+           <div className="project-image">
+           <img src={Project2Image} alt="project2" /> 
+          </div> *
        
-         </SecondProjectHolder>
+         </SecondProjectHolder> 
         {/* second project ends here */}
 
         {/* third project start from here */}
-         <ThirdProjectHolder>
+          <ThirdProjectHolder>
           <div className="project-image">
             <img src={Project3Image} alt="project1" />
           </div>
@@ -174,11 +174,11 @@ const ProjectBuilt = () => {
               <button>Learn More</button>
             </div>
           </div>
-        </ThirdProjectHolder>
+        </ThirdProjectHolder> 
         {/* third project ends here */}
        </TopThreeProjectsHolder> 
 
-     <OtherNotableProjectHolder>
+    <OtherNotableProjectHolder>
 
         <div className="header">
             <span className="otherProjects">Other Notable Projects</span>
@@ -250,7 +250,7 @@ const ProjectBuilt = () => {
         <div className="showMoreAndLessBut">
             <button onClick={handleShowAll}>{showAll ? 'Show Less' : 'Show More'}</button>
         </div>
-      </OtherNotableProjectHolder> 
+      </OtherNotableProjectHolder>  
 
     </Container>
   );

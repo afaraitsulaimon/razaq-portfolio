@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const ResponsiveSlideHolder = styled.div`
 
-
+font-family: 'Fira Code', monospace;
 
         .offcanvas-body ul{
                 display: flex;
