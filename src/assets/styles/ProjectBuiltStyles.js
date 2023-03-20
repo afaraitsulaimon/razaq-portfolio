@@ -186,11 +186,7 @@ left: 1.1em;
 }
 
 .projectDetails .projectDescription{
-    /* height: 122px;
-width: 508px;
-border-radius: 4px;
-padding: 25px;
-text-align: right; */
+    
 width: 100%;
 position: absolute;
 right: 0;
@@ -202,14 +198,7 @@ background-color: transparent;
 } 
 
 .projectDetails .toolsUsed ul li{
-    /* list-style: none;
-    padding: 0.5em;
-    font-family: 'Fira Code';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 17px;
-color: #FFFFFF; */
+   
 color: #FFFFFF;
 
 } 
@@ -231,7 +220,47 @@ color: #FFFFFF;
 
 }
 
+@media only screen and (max-width: 480px) {
+    .projectDetails .projectDescription{
+    
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top:2.5em;
+    text-align: left;
+    padding: 20px;
+    background-color: transparent; 
+    
+    } 
+    .projectDetails .projectDescription .secondcontent{
+   
+   font-family: 'Fira Code';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 10px;
+color: #00FF75;
+margin-top: -1em;
+}
 
+.projectDetails .toolsUsed {
+    position: absolute;
+    left: -1.2em;
+    top: 11.5em;
+}
+.projectDetails .toolsUsed ul li{
+   
+  font-size: 10px;
+   
+   } 
+   
+.projectDetails .socialUsed{
+   
+   position: absolute;
+   top: 12.5em;
+   left: 1.2em;
+}
+}
 `;
 
 
@@ -441,6 +470,51 @@ line-height: 13px;
 
 }
 
+/* responsiveness for smaller screen */
+
+@media only screen and (max-width: 480px) {
+    .projectDetails .top span{
+    font-size: 10px;
+}
+    .projectDetails .top p{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.projectDetails .projectDescription .content{
+   
+   line-height: 20px;
+   /* or 167% */
+   padding-top: 0;
+   font-size: 13px;
+   }
+
+
+   .projectDetails .toolsUsed {
+    position: absolute;
+    left: -1.2em;
+    top: 12.5em;
+}
+.projectDetails .toolsUsed ul li{
+   
+font-weight: 200;
+font-size: 9px;
+line-height: 7px;
+padding: 0.3em;
+/* identical to box height, or 130% */
+
+}
+
+
+
+.projectDetails .socialUsed{
+   
+   position: absolute;
+   top: 14em;
+   left: 1.2em;
+}
+   
+}
 
 `;
 
@@ -670,14 +744,7 @@ background-color: transparent;
     
 
 .projectDetails .toolsUsed ul li{
-    /* list-style: none;
-    padding: 0.5em;
-    font-family: 'Fira Code';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 17px;
-color: #FFFFFF; */
+   
 color: #FFFFFF;
 
 } 
@@ -713,6 +780,66 @@ border:2px solid #00FF75;
 
 }
 
+/* responsiveness for smaller screen */
+
+@media only screen and (max-width: 480px) {
+    .projectDetails .projectDescription .firstcontent{
+    
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    /* or 146% */
+    
+    color: #FFFFFF;
+    word-break: break-all;
+    }
+    
+    .projectDetails .projectDescription .secondcontent{
+       
+        /* font-family: 'Inter'; */
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    /* or 156% */
+    color: #FFFFFF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: -1em;
+    }
+
+    .projectDetails .toolsUsed {
+    position: absolute;
+    left: -1.2em;
+    top: 11.7em;
+}
+.projectDetails .toolsUsed ul li{
+    font-size: 10px;
+}
+
+.projectDetails .learnMoreButton{
+
+position: absolute;
+top: 12.8em;
+left: 1em;
+
+}
+
+.projectDetails .learnMoreButton button{
+font-family: 'Fira Code';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 10px;
+/* identical to box height, or 100% */
+padding: 0.2em 0.7em;
+border-radius: 5px;
+color: #00FF75;
+background-color: transparent;
+border:2px solid #00FF75;
+}
+
+}
+
 `;
 
 
@@ -725,6 +852,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 margin-top: 10em;
+
 
 .header{
     text-align: center;
@@ -900,5 +1028,11 @@ border-radius: 10px; */
 }
 
 }
+
+/* for smaller screen */
+@media only screen and (max-width: 480px) {
+    margin-top: 5em;
+}
+
 
 `;
