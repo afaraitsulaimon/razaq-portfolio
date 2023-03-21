@@ -8,13 +8,11 @@ export const Container = styled.div`
 export const IntroContentHolder = styled.div`
   width: 100%;
   height: 50vh;
-  /* background-color: yellow; */
   margin-top: 2em;
 
   .theContent {
     width: 50%;
     height: 100%;
-    /* background-color: pink; */
     margin-left: 10em;
   }
 
@@ -71,11 +69,10 @@ export const IntroContentHolder = styled.div`
     color: #ffffff;
   }
 
-  @media (max-width: 912px) and (min-width: 360px) {
+  /* @media (max-width: 912px) and (min-width: 360px) {
     .theContent {
       width: 100%;
       height: 70%;
-      /* background-color: pink;  */
       margin-left: 0;
       padding-left: 2em;
     }
@@ -102,10 +99,113 @@ export const IntroContentHolder = styled.div`
       font-weight: 300;
       font-size: 13px;
     }
-  }
+  } */
+
+  @media only screen and (max-width: 480px) { 
+    .theContent {
+      width: 100%;
+      height: 70%;
+      margin-left: 0;
+      padding-left: 1em;
+     
+    }
+
+    .theContent .greetings {
+      font-size: 12px;
+    }
+
+    .theContent .ownersName h1 {
+      font-weight: 300;
+      font-size: 20px;
+    }
+
+    .theContent .jobFunction {
+      font-size: 25px;
+      line-height: 36px;
+    }
+
+    .theContent .jobDescriptionHolder {
+      margin-top: 10px;
+    }
+
+    .theContent .jobDescriptionHolder .jobDescription {
+      font-weight: 300;
+      font-size: 15px;
+    
+    }
+   }
+
+  @media only screen and (min-width: 481px) and (max-width: 768px) { 
+    .theContent {
+      width: 100%;
+      height: 70%;
+      margin-left: 0;
+      padding-left: 1.5em;
+    }
+
+    .theContent .greetings {
+      font-size: 15px;
+    }
+
+    .theContent .ownersName h1 {
+      font-weight: 300;
+      font-size: 22px;
+    }
+
+    .theContent .jobFunction {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    .theContent .jobDescriptionHolder {
+      margin-top: 10px;
+    }
+
+    .theContent .jobDescriptionHolder .jobDescription {
+      font-weight: 300;
+      font-size: 25px;
+    }
+   }
+
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) { 
+    .theContent {
+      width: 100%;
+      height: 70%;
+      margin-left: 0;
+      padding-left: 2em;
+    }
+
+    .theContent .greetings {
+      font-size: 20px;
+    }
+
+    .theContent .ownersName h1 {
+      font-weight: 300;
+      font-size: 30px;
+    }
+
+    .theContent .jobFunction {
+      font-size: 35px;
+      line-height: 36px;
+      
+    }
+
+    .theContent .jobDescriptionHolder {
+      margin-top: 10px;
+    }
+
+    .theContent .jobDescriptionHolder .jobDescription {
+      font-weight: 300;
+      font-size: 25px;
+      padding-top: 5px;
+    }
+   }
+
 `;
 
 export const SocialMediaHolder = styled.div`
+.innerSocialHolder{
   height: 400px;
   width: 113px;
   display: flex;
@@ -113,13 +213,422 @@ export const SocialMediaHolder = styled.div`
   align-items: center;
   justify-content: space-evenly;
   position: fixed;
-  top: 10em;
+  top: 3em;
+  transform: rotate('90deg');
+
+}
+  
  
 
-  @media (max-width: 912px) and (min-width: 360px) {
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .innerSocialHolder{display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 321em;
+     
+ }}
+
+ @media only screen and (width: 360px) {
+
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .innerSocialHolder{
+  display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 318em;
+    
+ }
+
+}
+
+
+
+@media only screen and (width: 384px) {
+
+width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .innerSocialHolder{
+display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 30px;
+  position: absolute;
+  top: 317em;
+  
+}
+
+}
+
+
+
+@media only screen and (width: 390px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .innerSocialHolder{display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 327em;
+     
+ }}
+
+
+ 
+@media  (width: 393px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .innerSocialHolder{display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 327em;
+     
+ }}
+
+ @media only screen and (width: 412px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .innerSocialHolder{display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 330em;
+     
+ }} 
+
+
+@media only screen and (width: 412px) {
+
+width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .innerSocialHolder{
+display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 30px;
+  position: absolute;
+  /* top: 330em; */
+  top: 323em;
+  
+}
+
+}
+ @media only screen and (width: 414px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .innerSocialHolder{display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 327em;
+     
+ }} 
+
+@media only screen and (width: 414px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .innerSocialHolder{display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 328em;
+     
+ }}
+
+
+
+@media only screen and (width: 480px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .innerSocialHolder{display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 314em;
+     
+ }}
+
+
+
+
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .innerSocialHolder{display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 370em;
+  
+ }
+
+}
+
+@media (width: 540px) {
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+.innerSocialHolder{
+  
+  display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 330em;
+    
+}
+
+}
+
+
+
+ @media only screen and (width: 712px){
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+.innerSocialHolder{
+  display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 347em;
+
+ }
+}
+
+@media only screen and (width: 640px){
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+.innerSocialHolder{
+  display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 320em;
+
+ }
+}
+
+@media only screen and (width: 600px){
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+.innerSocialHolder{
+  display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 330em;
+
+ }
+}
+
+/* @media only screen and (width: 768px){
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+.innerSocialHolder{
+  display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 347em;
+
+ }
+} */
+
+
+@media only screen and (width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .innerSocialHolder{display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 350em;
+     
+ }}
+
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+
+
+.innerSocialHolder{
     display: flex;
     flex-direction: row;
-    /* background-color: red; */
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 357em;
+    
+
+  }
+}
+
+
+
+
+
+
+
+
+/*  */
+
+
+
+
+
+
+@media only screen and (width: 820px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .innerSocialHolder{display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 353em;
+     
+ }}
+
+
+
+ @media only screen and (width: 912px){
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+.innerSocialHolder{
+  display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 373em;
+
+ }
+}
+/*  */
+
+
+/* @media only screen and (width: 1024px){
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+.innerSocialHolder{
+  display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 284em;
+
+ }
+} */
+  /* @media (max-width: 912px) and (min-width: 360px) {
+    display: flex;
+    flex-direction: row;
     width: 70%;
     height: 30px;
     position: absolute;
@@ -127,17 +636,14 @@ export const SocialMediaHolder = styled.div`
      left: 4.5em; 
    
   }
- 
+  */
 
-  @media only screen and (width: 768px) {
+  /* @media only screen and (width: 768px) {
     top: 382em;
     left: 7em; 
   }
 
-  @media (width: 412px) {
-    top: 325em;
-    left: 4em; 
-  }
+
 
   @media only screen and (width: 414px) {
     top: 330em;
@@ -160,7 +666,7 @@ export const SocialMediaHolder = styled.div`
   @media (width: 712px) {
     top: 385em;
     left: 6.5em;
-  }
+  } */
 `;
 
 export const LineSocial = styled.span`
@@ -209,8 +715,25 @@ export const AboutMeAndImageHolder = styled.div`
   justify-content: center;
   margin-top: 7em;
   margin-bottom: 5em;
-  @media (max-width: 912px) and (min-width: 360px) {
-    /* background-color: pink; */
+
+
+  @media only screen and (max-width: 480px) { 
+    margin-top: -2em;
+  }
+ 
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    margin-top: -8em;
+   }
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    margin-top: -15em;
+   }
+
+   @media only screen and (width: 640px)  {
+    margin-top: 10em;
+   }
+
+  /* @media (max-width: 912px) and (min-width: 360px) {
     margin-top: -5em;
   }
   @media only screen and (min-width: 481px) and (max-width: 768px){
@@ -220,7 +743,7 @@ export const AboutMeAndImageHolder = styled.div`
     @media only screen and (width: 540px) {
    margin-top: -9em;
     }
-
+ */
 
 `;
 
@@ -230,7 +753,6 @@ export const InnerAboutAndImageHolder = styled.div`
 
   .aboutHeader {
     display: flex;
-    /* background-color: brown; */
     align-items: center;
   }
 
@@ -283,7 +805,200 @@ export const InnerAboutAndImageHolder = styled.div`
     height: 200px;
   }
 
+  /* for smaller screen */
 
+
+  @media only screen and (max-width: 480px) { 
+    width: 100%;
+
+.aboutHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutHeader .numberAndName .aboutNumber {
+
+font-size: 15px;
+
+
+}
+
+.aboutHeader .numberAndName .about {
+
+font-size: 12px;
+
+padding-left: 2px;
+}
+
+.aboutContentImageHolder {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.aboutContentImageHolder .aboutContent {
+  width: 100%;
+  padding: 2em;
+  font-size: 15px;
+}
+
+.aboutContentImageHolder .aboutImage {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  top: 50em;
+}
+
+.aboutContentImageHolder .aboutImage img {
+  width: 200px;
+  height: 200px;
+
+
+}
+.aboutHeader .aboutLine {
+width: 220px;
+
+}
+  }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  width: 100%;
+
+.aboutHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutHeader .numberAndName .aboutNumber {
+
+font-size: 22px;
+
+
+}
+
+.aboutHeader .numberAndName .about {
+
+font-size: 22px;
+
+padding-left: 3px;
+}
+
+.aboutContentImageHolder {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.aboutContentImageHolder .aboutContent {
+  width: 100%;
+  padding: 2em;
+  font-size: 15px;
+}
+
+.aboutContentImageHolder .aboutImage {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  top: 35em;
+}
+
+.aboutContentImageHolder .aboutImage img {
+  width: 300px;
+  height: 300px;
+
+}
+.aboutHeader .aboutLine {
+width: 240px;
+
+}
+ }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) { 
+  width: 100%;
+
+.aboutHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutHeader .numberAndName .aboutNumber {
+
+font-size: 25px;
+
+
+}
+
+.aboutHeader .numberAndName .about {
+
+font-size: 25px;
+
+padding-left: 3px;
+}
+
+.aboutContentImageHolder {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.aboutContentImageHolder .aboutContent {
+  width: 100%;
+  padding: 2em;
+  font-size: 20px;
+}
+
+.aboutContentImageHolder .aboutImage {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  top: 40em;
+}
+
+.aboutContentImageHolder .aboutImage img {
+  width: 300px;
+  height: 300px;
+
+}
+.aboutHeader .aboutLine {
+width: 240px;
+
+}
+}
+@media (width: 540px) {
+margin-top: 9em;
+}
+
+@media (width: 480px) {
+margin-top: -2em;
+
+.aboutContentImageHolder .aboutImage {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  top: 40em;
+}
+
+}
+
+@media (width: 375px) {
+margin-top: 10px;
+
+.aboutContentImageHolder .aboutImage {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  top: 1em;
+}
+
+
+}
+
+/* 
 
   @media (max-width: 912px) and (min-width: 360px) {
     width: 100%;
@@ -371,7 +1086,7 @@ export const InnerAboutAndImageHolder = styled.div`
     height: 200px;
     margin-top: -2em;
   }
-    }
+    } */
 `;
 
 export const TechnologyListHolder = styled.div`
@@ -430,6 +1145,161 @@ export const TechnologyListHolder = styled.div`
     letter-spacing: 0.1em;
   }
 
+  /* for smaller screen */
+
+  @media (width: 360px) {
+    height: 20vh;
+    padding-top: 10em;
+
+ 
+  }
+
+
+
+  @media (width: 384px) {
+    height: 20vh;
+    padding-top: 8em;
+
+  }
+
+
+
+
+  @media only screen and (max-width: 480px) {
+    height: 20vh;
+    margin-top: -1.5em;
+
+    .listHolder {
+    margin-top: 2em;
+  }
+
+  .listHolder span {
+    font-size: 10px;
+    
+    
+  }
+
+  .listHolder .programmingList .leftList span {
+    
+    font-size: 13px;
+    
+  }
+
+  .listHolder .programmingList .rightList span{
+    font-size: 13px;
+
+  }
+ }
+
+ @media only screen and (width: 480px) {
+    height: 20vh;
+    margin-top: -8.5em;
+
+    .listHolder {
+    margin-top: 2em;
+  }
+
+  .listHolder span {
+    font-size: 10px;
+    
+    
+  }
+
+  .listHolder .programmingList .leftList span {
+    
+    font-size: 13px;
+    
+  }
+
+  .listHolder .programmingList .rightList span{
+    font-size: 13px;
+
+  }
+ }
+
+
+ /* for medium screen */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    height: 20vh;
+    margin-top: -20em;
+    
+    /* .listHolder {
+    margin-top: -4em;
+  } */
+
+  .listHolder span {
+    font-size: 15px;
+    
+  }
+
+  .listHolder .programmingList .leftList span {
+    
+    font-size: 15px;
+    
+  }
+
+  .listHolder .programmingList .rightList span{
+    font-size: 15px;
+
+  }
+
+ }
+
+ /* for bigger screen */
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) { 
+    height: 20vh;
+    margin-top: -22em;
+
+    /* .listHolder {
+    margin-top: -4em;
+  } */
+
+  .listHolder span {
+    font-size: 17px;
+    
+  }
+
+  .listHolder .programmingList .leftList span {
+    
+    font-size: 13px;
+    
+  }
+
+  .listHolder .programmingList .rightList span{
+    font-size: 13px;
+
+  }
+
+  }
+
+@media (width: 540px) {
+  height: 20vh;
+    margin-top: 0;
+    .listHolder {
+    margin-top: 0;
+  }
+
+  .listHolder span {
+    font-size: 13px;
+    
+  }
+
+  .listHolder .programmingList .leftList span {
+    
+    font-size: 13px;
+    
+  }
+
+  .listHolder .programmingList .rightList span{
+    font-size: 13px;
+
+  }
+ 
+}
+
+/* 
 
   @media (max-width: 912px) and (min-width: 360px) {
     height: 20vh;
@@ -455,47 +1325,8 @@ export const TechnologyListHolder = styled.div`
   }
   }
 
+  */
  
- 
-
-  @media only screen and (min-width: 481px) and (max-width: 768px){
-    margin-top: -20em;
-    }
-
-  /* for smaller screen */
-
-
-  @media only screen and (max-width: 480px) { 
-    .listHolder {
-    margin-top: -2em;
-  }
-
-  .listHolder span {
-    font-size: 8px;
-    
-  }
-
-  .listHolder .programmingList .leftList span {
-    
-    font-size: 11px;
-    
-  }
-  }
-
-
-  @media only screen and (width: 412px) {
-   margin-top: -17em;
-    }
-
-  @media only screen and (width: 414px) {
-   margin-top: -17em;
-    }
-
-    @media only screen and (width: 540px) {
-   margin-top: -10em;
-  
-}
-  
   
 `;
 
@@ -510,13 +1341,35 @@ export const WorkExpHolder = styled.div`
   margin-bottom: 50px;
 
 
+
+  @media only screen and (max-width: 480px) {
+
+    margin-top: 150px;
+ }
+
+ 
+ @media only screen and (width: 480px) {
+
+margin-top: 10px;
+}
+
+
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+
+ }
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) { 
+}
+
+@media (width: 540px) {
+  margin-top: 100px;
+}
 `;
 
 
 export const InnerWorkExpHolder = styled.div`
   width: 700px;
   height: 100%;
-  /* background-color: yellow; */
 
 
   .workExpHeader {
@@ -553,7 +1406,6 @@ export const InnerWorkExpHolder = styled.div`
   @media (max-width: 912px) and (min-width: 360px) {
   width: 100%;
   height: 100%;
-  /* background-color: blue; */
   margin-top: 21em;
 
   .workExpHeader {
@@ -612,7 +1464,6 @@ export const InnerWorkExpHolder = styled.div`
 export const ExperienceContentHolder = styled.div`
   width: 100%;
   height: 100%;
-  /* background-color: blue; */
   margin-top: 40px;
   display: flex;
 
@@ -758,7 +1609,6 @@ export const ProjectBuiltHolder = styled.div`
 export const InnerProjectBuiltHolder = styled.div`
   width: 80%;
   height: 100%;
-  /* background-color: blue; */
   display: flex;
   flex-direction: column;
 
@@ -800,7 +1650,6 @@ export const InnerProjectBuiltHolder = styled.div`
 
   @media (max-width: 912px) and (min-width: 360px) {
     width: 100%;
-    /* background-color: brown; */
 
     .projectBuiltHeader {
       width: 100%;
@@ -840,7 +1689,6 @@ export const InnerProjectBuiltHolder = styled.div`
 
 export const FooterContentHolder = styled.div`
   width: 100%;
-  /* background-color: green yellowgreen; */
   display: flex;
   flex-direction: column;
   align-items: center;
