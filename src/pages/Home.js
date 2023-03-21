@@ -76,6 +76,9 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
       </IntroContentHolder> 
 
       <SocialMediaHolder>
+        <div className="innerSocialHolder">
+
+        
         <div>
           <FiGithub color="#907897" />
         </div>
@@ -97,6 +100,7 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
         </div>
 
         <LineSocial></LineSocial>
+        </div>
       </SocialMediaHolder> 
 
       <EmailHolder>
@@ -106,7 +110,7 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
         <LineEmail></LineEmail>
       </EmailHolder> 
 
-      <AboutMeAndImageHolder id="abt">
+       <AboutMeAndImageHolder id="abt">
         <InnerAboutAndImageHolder>
           <div className="aboutHeader">
             <div className="numberAndName">
@@ -141,7 +145,7 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
             </div>
           </div>
         </InnerAboutAndImageHolder>
-      </AboutMeAndImageHolder>   
+      </AboutMeAndImageHolder> 
  
       <TechnologyListHolder>
 
@@ -164,9 +168,9 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
 
           </div>
         
-      </TechnologyListHolder>
+      </TechnologyListHolder> 
 
-       <WorkExpHolder id="exp">
+   <WorkExpHolder id="exp">
         <InnerWorkExpHolder>
         <div className="workExpHeader">
             <div className="numberAndName">
@@ -219,13 +223,13 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
       
 
 
-      </ProjectBuiltHolder>  
+      </ProjectBuiltHolder>   
 
 {/* footer content starts here */}
 
 
 
-  <FooterContentHolder>
+   <FooterContentHolder>
        <div className="comesNext">
           <span>What Comes Next?</span>
         </div> 
@@ -244,7 +248,7 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
       <button onClick={() => window.location = 'mailto:Adedunni155@gmail.com'}> Send Mail</button>
         </div> 
 
-      </FooterContentHolder>  
+      </FooterContentHolder> 
       {/* footer content end here */}
       {/* content of the home start */}
     </Container>
