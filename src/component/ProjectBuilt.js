@@ -15,6 +15,9 @@ import Project3Image from "../assets/images/project3.webp";
 import { FiGithub, FiFolder} from "react-icons/fi";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import {listOfOtherProjects} from "../component/OtherProjectData"
+import 'animate.css';
+
+
 
 const ProjectBuilt = () => {
 
@@ -188,7 +191,7 @@ const ProjectBuilt = () => {
         <div className="otherProjectDisplayHolder">
             {!showAll ? 
             listOfOtherProjects.slice(0, 6).map((listOfOtherProject) => (
-              <div key={listOfOtherProject.id} className='card'>
+              <div key={listOfOtherProject.id} className='card animate__animated animate__rubberBand'>
               
                   <div className="topIcons">
                       <div className="folderIcon">
@@ -216,7 +219,7 @@ const ProjectBuilt = () => {
               </div>
           )) : 
           listOfOtherProjects.slice(0, listOfOtherProjects.length).map((listOfOtherProject) => (
-            <div key={listOfOtherProject.id} className='card'>
+            <div key={listOfOtherProject.id} className='card animate__animated animate__bounce'>
             
                 <div className="topIcons">
                     <div className="folderIcon">

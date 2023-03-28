@@ -97,6 +97,11 @@ ul li button:hover{
     border: none;
 }
 
+@media(width:320px){
+    display: none;
+
+
+    }
 
 @media (max-width: 912px) and (min-width: 360px) {
         display: none;
@@ -109,6 +114,11 @@ ul li button:hover{
 export const MenuIconHolder = styled.div`
     display: none;
     margin-right: 20px;
+
+    @media(width:320px){
+        display: inline;
+
+    }
 
     @media (max-width: 912px) and (min-width: 360px) {
         display: inline;
