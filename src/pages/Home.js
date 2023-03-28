@@ -26,6 +26,7 @@ import UserImage from '../assets/images/user-image.jpg';
 import {workExpDetails} from '../component/WorkExperienceData'
 import ProjectBuilt from "../component/ProjectBuilt";
 
+import 'animate.css';
 
 // import Project1 from '../assets/images/project1.webp'
 
@@ -52,23 +53,23 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
 
         <IntroContentHolder>
         <div className="theContent">
-          <div>
+          <div className="animate__animated animate__animated animate__fadeInDown">
             <span className="greetings">Hello, my name is</span>
           </div>
           <div className="ownersName">
-            <h1>Sanusi Razaq</h1>
+            <h1 className="animate__animated animate__fadeInLeft">Sanusi Razaq</h1>
           </div>
-          <div className="jobFunctionHolder" >
-            <span className="jobFunction">I build web applications.</span>
+          <div className="jobFunctionHolder animate__animated animate__fadeInRight" >
+            <span className="jobFunction ">I build web applications.</span>
           </div>
           <div className="jobDescriptionHolder">
-            <p className="jobDescription">
+            <p className="jobDescription animate__animated animate__fadeInDown">
               I work as a software developer with a focus on creating amazing
-              <br />
+             
               digital experiences. At{" "}
               <span style={{ color: "#00FF75" }}>Upstate Hub</span>, I'm
               concentrating on creating
-              <br />
+         
               products that are human-centered and accessible.
             </p>
           </div>
@@ -120,7 +121,7 @@ const [activeButton, setActiveButton] = useState(workExpDetails[0]);
             <span className="aboutLine"></span>
           </div>
 
-          <div className="aboutContentImageHolder">
+          <div className="aboutContentImageHolder animate__animated animate__zoomInDown">
             <div className="aboutContent">
             <p>
               Hello! My name is Sanusi and I enjoy creating things that live on

@@ -213,12 +213,12 @@ export const SocialMediaHolder = styled.div`
   align-items: center;
   justify-content: space-evenly;
   position: fixed;
-  top: 3em;
+  top: 9em;
   transform: rotate('90deg');
 
 }
   
- 
+
 
   @media only screen and (max-width: 480px) {
     width: 100%;
@@ -235,6 +235,10 @@ export const SocialMediaHolder = styled.div`
     top: 321em;
      
  }}
+
+ 
+
+ 
 
  @media only screen and (width: 360px) {
 
@@ -398,7 +402,7 @@ display: flex;
     width: 70%;
     height: 30px;
     position: absolute;
-    top: 314em;
+    top: 317em;
      
  }}
 
@@ -536,6 +540,7 @@ display: flex;
  }}
 
 
+
   @media only screen and (min-width: 769px) and (max-width: 1024px) { 
     width: 100%;
     display: flex;
@@ -564,13 +569,6 @@ display: flex;
 
 
 
-/*  */
-
-
-
-
-
-
 @media only screen and (width: 820px) {
     width: 100%;
     display: flex;
@@ -587,7 +585,23 @@ display: flex;
      
  }}
 
+ @media(width:320px){
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 
+.innerSocialHolder{
+  display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    top: 315em;
+
+ }
+  }
 
  @media only screen and (width: 912px){
   width: 100%;
@@ -606,67 +620,28 @@ display: flex;
 
  }
 }
-/*  */
 
-
-/* @media only screen and (width: 1024px){
-  width: 100%;
+@media (width: 320px) {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 
-.innerSocialHolder{
-  display: flex;
+    .innerSocialHolder{
+      display: flex;
     flex-direction: row;
     width: 70%;
     height: 30px;
     position: absolute;
-    top: 284em;
+    top: 308em;
 
- }
-} */
-  /* @media (max-width: 912px) and (min-width: 360px) {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    height: 30px;
-    position: absolute;
-    top: 340em;
-     left: 4.5em; 
-   
-  }
-  */
-
-  /* @media only screen and (width: 768px) {
-    top: 382em;
-    left: 7em; 
-  }
+     
+ }}
 
 
 
-  @media only screen and (width: 414px) {
-    top: 330em;
-    left: 4em; 
-  }
 
- 
-
-
-  @media (width: 384px) {
-    top: 330em;
-  }
-  
-  
-  @media (width: 600px) {
-    top: 362em;
-    left: 5.5em;
-  }
-
-  @media (width: 712px) {
-    top: 385em;
-    left: 6.5em;
-  } */
 `;
 
 export const LineSocial = styled.span`
@@ -674,6 +649,9 @@ export const LineSocial = styled.span`
   height: 5.6em;
   background-color: #907897;
 
+  @media(width:320px){
+      display: none;
+  }
   @media (max-width: 912px) and (min-width: 360px) {
     display: none;
   }
@@ -697,15 +675,20 @@ export const EmailHolder = styled.div`
     font-family: 'Fira Code', monospace;
   }
 
+  
   @media (max-width: 912px) and (min-width: 360px) {
     display: none;
   }
+
+ 
 `;
 
 export const LineEmail = styled.div`
   width: 1px;
   height: 5.6em;
   background-color: #907897;
+
+  
 `;
 
 export const AboutMeAndImageHolder = styled.div`
@@ -717,9 +700,16 @@ export const AboutMeAndImageHolder = styled.div`
   margin-bottom: 5em;
 
 
+  @media(width:320px){
+    margin-top: 0;
+    margin-bottom: 13em;
+
+  }
+
   @media only screen and (max-width: 480px) { 
     margin-top: -2em;
   }
+ 
  
   @media only screen and (min-width: 481px) and (max-width: 768px) {
     margin-top: -8em;
@@ -729,9 +719,12 @@ export const AboutMeAndImageHolder = styled.div`
     margin-top: -15em;
    }
 
+
    @media only screen and (width: 640px)  {
     margin-top: 10em;
    }
+
+  
 
   /* @media (max-width: 912px) and (min-width: 360px) {
     margin-top: -5em;
@@ -750,6 +743,7 @@ export const AboutMeAndImageHolder = styled.div`
 export const InnerAboutAndImageHolder = styled.div`
   width: 60%;
   height: 100%;
+
 
   .aboutHeader {
     display: flex;
@@ -808,6 +802,50 @@ export const InnerAboutAndImageHolder = styled.div`
   /* for smaller screen */
 
 
+@media(width:320px){
+
+ 
+  .aboutHeader {
+    padding: 1em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .aboutHeader .numberAndName {
+  width: 120px;
+ }
+  .aboutHeader .numberAndName .aboutNumber {
+   
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 10px;
+  }
+
+  
+
+  .aboutHeader .numberAndName .about {
+
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 20px;
+    color: #00ff75;
+    padding-left: 0;
+  }
+
+  .aboutHeader .aboutLine {
+    width: 90px;
+    height: 1px;
+    background-color: #233554;
+    margin-left: 0;
+  }
+
+  .aboutContentImageHolder .aboutImage img {
+    display: none;
+  }
+ 
+}
+
   @media only screen and (max-width: 480px) { 
     width: 100%;
 
@@ -861,6 +899,7 @@ width: 220px;
 
 }
   }
+
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   width: 100%;
@@ -984,19 +1023,7 @@ margin-top: -2em;
 
 }
 
-@media (width: 375px) {
-margin-top: 10px;
 
-.aboutContentImageHolder .aboutImage {
-  display: flex;
-  justify-self: center;
-  align-self: center;
-  position: absolute;
-  top: 1em;
-}
-
-
-}
 
 /* 
 
@@ -1147,14 +1174,24 @@ export const TechnologyListHolder = styled.div`
 
   /* for smaller screen */
 
+  @media (width: 320px) {
+   
+    padding-top: 0 ;
+
+    .listHolder{
+      padding: 0.3em;
+    }
+
+  }
+
+
   @media (width: 360px) {
     height: 20vh;
     padding-top: 10em;
 
- 
   }
 
-
+ 
 
   @media (width: 384px) {
     height: 20vh;
@@ -1162,8 +1199,7 @@ export const TechnologyListHolder = styled.div`
 
   }
 
-
-
+ 
 
   @media only screen and (max-width: 480px) {
     height: 20vh;
@@ -1190,6 +1226,8 @@ export const TechnologyListHolder = styled.div`
 
   }
  }
+
+
 
  @media only screen and (width: 480px) {
     height: 20vh;
@@ -1299,6 +1337,7 @@ export const TechnologyListHolder = styled.div`
  
 }
 
+
 /* 
 
   @media (max-width: 912px) and (min-width: 360px) {
@@ -1340,14 +1379,17 @@ export const WorkExpHolder = styled.div`
   margin-top: 30px;
   margin-bottom: 50px;
 
-
+ 
 
   @media only screen and (max-width: 480px) {
 
     margin-top: 150px;
  }
 
- 
+ @media (width:320px){
+    margin-top: 7em;
+
+}
  @media only screen and (width: 480px) {
 
 margin-top: 10px;
@@ -1375,6 +1417,7 @@ export const InnerWorkExpHolder = styled.div`
   .workExpHeader {
     display: flex;
     align-items: center;
+    /* background-color: green; */
   }
 
   .workExpHeader .numberAndName {
@@ -1402,6 +1445,36 @@ export const InnerWorkExpHolder = styled.div`
     background-color: #233554;
     margin-left: 1em;
   }
+
+  /* style for 320 px only */
+
+  @media (width:320px){
+    width: 100%;
+  height: 100%;
+
+    .workExpHeader {
+      padding: 1em;
+
+   display: flex;
+   justify-content: space-around;
+  }
+
+  .workExpHeader .numberAndName {
+    font-size: 20px;
+    line-height: 15px;
+    font-weight: 300;
+
+  }
+
+  .workExpHeader .workExpLine {
+    width: 150px;
+    height: 1px;
+    background-color: #233554;
+    margin-left: 0;
+  }
+ 
+
+}
 
   @media (max-width: 912px) and (min-width: 360px) {
   width: 100%;
@@ -1556,6 +1629,97 @@ export const ExperienceContentHolder = styled.div`
     color: #ffffff;
   }
 
+  @media(width:320px){
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    /* background-color: red; */
+
+
+    .expListButtons {
+  width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    overflow: scroll;
+    margin-bottom: 10px;
+      /* to remove the scrollbar line for IE, Edge and firefox */
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* to remove the scrollbar line for chrome safari and opera */
+  .expListButtons::-webkit-scrollbar {
+    display: none;
+  }
+
+  .expListButtons button {
+    border-left:none;
+    border-bottom:none;
+    padding: 1em 1.7em 1em 1.7em;
+    font-size: 1em;
+  }
+
+
+  .expListButtons .active {
+    border-bottom: 3px solid #00ff75;
+    transition: 1s ease-out;
+    background-color: rgb(168, 178, 209, 0.3);
+    border-left: none;
+    
+  }
+
+  .expListContents {
+    margin-left: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .expListContents .post .position {
+   
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+   
+  }
+
+  .expListContents .post .orgName {
+   
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+   
+  }
+
+  .expListContents .year span {
+
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 10px;
+    /* or 130% */
+    color: #a8b2d1;
+  }
+
+  .expListContents .year {
+    margin-bottom: 1em;
+    margin-top: -0.7em;
+  }
+
+  .expListContents .description {
+    padding-bottom: 1.5em;
+  }
+
+  .expListContents .description span {
+   
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 23px;
+  
+  }
+
+  }
     /* responsive styling */
     @media (max-width: 912px) and (min-width: 360px) {
     display: flex;
@@ -1753,6 +1917,19 @@ font-style: normal;
     border-radius: 5px;
     border: 1px solid #00ff75;
     background: transparent;
+    
+  }
+
+  @media(width:320px){
+    .message {
+    width: 100%;
+    padding: 1em;
+    height: 100%;
+    /* background-color: green; */
+    text-align: center;
+    margin-top: -13px;
+  }
+
   }
   @media (max-width: 912px) and (min-width: 360px) {
 

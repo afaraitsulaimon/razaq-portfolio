@@ -140,6 +140,108 @@ color: #FFFFFF;
 
 /* responsive styling */
 
+
+@media (width: 320px) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+    .project-image{
+
+width: 100%;
+border-radius: 5px;
+
+}
+
+.project-image img{
+
+width: 100%;
+border-radius: 5px;
+
+}
+
+.projectDetails{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgba(71, 18, 84,0.7);  
+   
+}
+
+.projectDetails .top span{
+
+position: absolute;
+top: 1.5em;
+left: 1.5em;
+
+
+}
+
+.projectDetails .top p{
+
+color: black;
+position: absolute;
+top: 1.8em;
+left: 1.1em;
+font-size: 1em;
+}
+
+.projectDetails .projectDescription{
+    
+width: 100%;
+position: absolute;
+right: 0;
+top:5em;
+text-align: left;
+padding: 0;
+background-color: transparent; 
+
+} 
+
+.projectDetails .projectDescription .firstcontent{
+    font-size: 0.6em;
+    line-height: 10px;
+    
+    } 
+
+    .projectDetails .projectDescription .secondcontent{
+    font-size: 0.3em;
+    line-height: 10px;
+    
+    } 
+
+.projectDetails .toolsUsed {
+    position: relative;
+    
+    background-color:blue;
+}
+
+
+.projectDetails .toolsUsed ul{
+    position: absolute;
+    left: 0.7em;
+    top: -6em;
+    font-size: 0.5em;
+
+   
+}
+
+.projectDetails .toolsUsed ul li{
+   color: #FFFFFF;
+   padding: 0.3em;
+   line-height: 0.7em;
+
+}
+
+
+
+.projectDetails .socialUsed{
+  display: none;
+}
+}
+
 @media (max-width: 912px) and (min-width: 360px) {
     display: flex;
     flex-direction: column;
@@ -217,8 +319,9 @@ color: #FFFFFF;
    left: 1.2em;
 }
 
-
 }
+
+
 
 @media only screen and (max-width: 480px) {
     .projectDetails .projectDescription{
@@ -261,6 +364,8 @@ margin-top: -1em;
    left: 1.2em;
 }
 }
+
+
 `;
 
 
@@ -386,6 +491,90 @@ color: #FFFFFF;
 }
 
 
+@media (width:320px){
+    display: flex;
+flex-direction: column;
+position: relative;
+
+.projectDetails{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgba(71, 18, 84,0.7); 
+    position: absolute;
+}
+.project-image{
+
+width: 100%;
+border-radius: 5px;
+}
+
+.project-image img{
+
+width: 100%;
+
+border-radius: 5px;
+
+
+}
+
+.projectDetails .top{
+    padding-left: 1.5em;
+}
+
+.projectDetails .top p{
+    color: black;
+}
+
+.projectDetails .projectDescription{
+    height: 122px;
+width: 100%;
+border-radius: 0;
+background-color: transparent; 
+display: flex;
+align-items: center;
+ position: absolute;
+ right: 0;
+
+}
+
+.projectDetails .projectDescription .content{
+   
+width: 100%;
+height: 80%;
+overflow: scroll;
+margin-top: -5em;
+}
+
+   
+
+.projectDetails .toolsUsed {
+   position: absolute;
+   top: 3em;
+   right: 1em;
+}
+
+.projectDetails .toolsUsed ul{
+   margin-top: -2em;
+   margin-left: -1em;
+
+}
+
+.projectDetails .toolsUsed ul li{
+   font-size: 5px;
+   color: #00FF75;
+
+}
+
+
+
+.projectDetails .socialUsed{
+   
+
+  display: none;
+}
+
+}
 
 /* responsive styling */
 @media (max-width: 912px) and (min-width: 360px) {
@@ -612,6 +801,7 @@ font-size: 14px;
 line-height: 20px;
 /* or 156% */
 color: #FFFFFF;
+
 }
 
 .projectDetails .toolsUsed {
@@ -661,6 +851,141 @@ border:2px solid #00FF75;
 }
 
 
+
+@media(width:320px){
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+    .project-image{
+
+width: 100%;
+border-radius: 5px;
+
+}
+
+.project-image img{
+
+width: 100%;
+border-radius: 5px;
+
+}
+
+.projectDetails{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgba(71, 18, 84,0.7);  
+   
+}
+
+.projectDetails .top span{
+
+position: absolute;
+top: 1.3em;
+left: 1.5em;
+
+}
+
+.projectDetails .top p{
+
+color: black;
+position: absolute;
+top: 2em;
+left: 1.4em;
+font-size: 0.8em;
+}
+
+.projectDetails .projectDescription{
+    
+padding: 10px;
+width: 100%;
+position: absolute;
+right:0;
+top:2.5em;
+text-align: left;
+background-color: transparent; 
+
+width: 100%;
+height: 30%;
+overflow: scroll;
+
+} 
+
+.projectDetails .projectDescription .firstcontent{
+    
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 8px;
+    /* or 146% */
+    
+    color: #FFFFFF;
+    }
+    
+    .projectDetails .projectDescription .secondcontent{
+       
+        /* font-family: 'Inter'; */
+    font-weight: 200;
+    font-size: 10px;
+    line-height: 8px;
+    /* or 156% */
+    color: #FFFFFF;
+  
+    }
+    
+
+.projectDetails .toolsUsed ul li{
+   
+color: #FFFFFF;
+
+} 
+
+/* .projectDetails .toolsUsed {
+    position: absolute;
+    left: -1.2em;
+    top: 12.5em;
+} */
+
+
+.projectDetails .toolsUsed {
+   position: absolute;
+   top: 3em;
+   right: 1em;
+}
+
+.projectDetails .toolsUsed ul{
+   margin-top: -3.8em;
+   margin-left: -1em;
+
+}
+
+.projectDetails .toolsUsed ul li{
+   font-size: 5px;
+   color: #00FF75;
+
+}
+
+.projectDetails .learnMoreButton{
+
+display: none;
+
+}
+
+/* .projectDetails .learnMoreButton button{
+font-family: 'Fira Code';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 13px;
+padding: 0.3em 1em;
+border-radius: 5px;
+color: #00FF75;
+background-color: transparent;
+border:2px solid #00FF75;
+} */
+}
 @media (max-width: 912px) and (min-width: 360px) {
     display: flex;
     flex-direction: column;
@@ -998,6 +1323,37 @@ border: 1px solid #00FF75;
 background: transparent;
 }
 
+
+@media(width:320px){
+     
+   .otherProjectDisplayHolder{
+       /* background-color: #00FF75; */
+       width: 100%;
+   /* min-height: 50vh; */
+   /* background-color: yellow; */
+   margin-right: 0; 
+   display: grid;
+   grid-template-columns: minmax(200px, 1fr);
+  justify-items: center;
+   /* column-gap: 1em;
+   row-gap: 1em; */
+   
+}
+
+.otherProjectDisplayHolder .card{
+    width: 100%;
+    height: 350px;
+    /* background: #471254;
+box-shadow: 0px 10px 30px -15px rgba(2, 12, 27, 0.7);
+border-radius: 10px; */
+}
+
+.showMoreAndLessBut{
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+}
 @media (max-width: 912px) and (min-width: 360px) {
    
    .otherProjectDisplayHolder{
